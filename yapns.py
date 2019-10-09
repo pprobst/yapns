@@ -1,4 +1,4 @@
-# aspns - another simple python network scanner
+# yapns - yet another python network scanner
 
 import sys
 import csv
@@ -130,5 +130,5 @@ def main(argv):
 
 if __name__ == "__main__":
     if len(sys.argv)==1:
-        sys.exit("Error: run like 'sudo python aspns.py 172.21.x.xxx/yy'")
+        sys.exit("Error: run like 'sudo python yapns.py 172.21.x.xxx/yy'")
     main(sys.argv[1])

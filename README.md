@@ -1,5 +1,5 @@
-# aspns
-another simple python network scanner
+# yapns
+- yet another python network scanner
 
 ### Dependencies
 * Python 3
