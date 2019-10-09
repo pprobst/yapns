@@ -14,11 +14,8 @@ def scan(ip):
     print("Scanning the network...")
 
     arp_request = ARP(pdst=ip)
-
     broadcast = Ether(dst="ff:ff:ff:ff:ff:ff")
-
     packet = broadcast/arp_request
-
     res = srp(packet, timeout=3, verbose=False)[0]
 
     clients = []
