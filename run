@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# args: <scan_interval_in_seconds>
+#       or none if 1-time scan
+
+IP=$(ip -o -f inet addr show | awk '/scope global/ {print $4}')
+
+if [ -z "$1" ]
+  then
+    sudo python aspns.py "$IP"
+    exit 0
+fi
+
+while true; do
+    sudo python aspns.py "$IP"
+    printf "\n"
+    sleep "$1"
+done
