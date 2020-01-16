@@ -7,7 +7,7 @@
 * [scapy](https://github.com/secdev/scapy)
 
 ### Running
-First, make sure that the script ```run``` is executable in your sistem.
+First, make sure that the script ```run``` is executable in your system.
 
 Then,
 
